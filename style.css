@@ -7,7 +7,7 @@ html, body {
 /* HERO */
 .hero {
     height: 100vh;
-    background: url('img.jpg') center/cover no-repeat;
+    background: url('img.png') center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
