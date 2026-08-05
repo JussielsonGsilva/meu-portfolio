@@ -1,0 +1,25 @@
+# Credenciais e configuração de ambiente — nunca versionar
+.env
+.env.*
+!.env.example
+
+# Arquivos de backup e sobras de edição em produção
+*.bak
+*.old
+*.backup
+*.orig
+*.save
+*.tmp
+*~
+
+# Arquivos temporários de editor
+*.swp
+*.swo
+
+# Metadados de sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
