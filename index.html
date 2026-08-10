@@ -23,7 +23,12 @@
          criar arquivo novo e manter a pasta plana. -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230A1628'/><path d='M4 21h7l6-6h8' stroke='%2322D3EE' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/><circle cx='25' cy='15' r='3.5' fill='%2322D3EE'/></svg>">
 
-    <link rel="stylesheet" href="style.css">
+    <!-- O ?v= existe porque o Nginx manda o navegador guardar o CSS por 10
+         anos (cache-control: max-age=315360000). Sem trocar o endereço, quem
+         já visitou o site continua com a folha de estilo antiga aplicada no
+         HTML novo — e vê a página sem layout nenhum.
+         Ao alterar o style.css, incremente este número. -->
+    <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 
