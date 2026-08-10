@@ -3,155 +3,293 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Jussielson G. Silva</title>
+
+    <title>Jussielson G. Silva | Analista e Desenvolvedor de Sistemas</title>
+
+    <meta name="description" content="Analista e desenvolvedor de sistemas em Python e PHP. Portfólio com 8 projetos: pipeline de 179 milhões de registros, sistemas de gestão, chat em tempo real e dashboards.">
+    <meta name="author" content="Jussielson G. Silva">
+
+    <!-- Prévia ao compartilhar o link no LinkedIn e no WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://databasejp.com/portifolio/">
+    <meta property="og:title" content="Jussielson G. Silva | Analista e Desenvolvedor de Sistemas">
+    <meta property="og:description" content="Portfólio com 8 projetos em Python e PHP: processamento de 179 milhões de registros, sistemas de gestão, chat em tempo real e dashboards.">
+    <meta property="og:image" content="https://databasejp.com/portifolio/img.png">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon embutido: uma trilha terminando num ponto aceso, o mesmo
+         motivo da imagem do hero. Fica como SVG no próprio HTML para não
+         criar arquivo novo e manter a pasta plana. -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230A1628'/><path d='M4 21h7l6-6h8' stroke='%2322D3EE' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/><circle cx='25' cy='15' r='3.5' fill='%2322D3EE'/></svg>">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- MENU FIXO -->
+    <nav class="menu">
+        <div class="menu-interno">
+            <a href="#topo" class="menu-marca">JGS</a>
+
+            <ul class="menu-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- HERO -->
-<header class="hero">
-    <div class="hero-content">
-        <h1>Jussielson G. Silva</h1>
-        <h2>Analista e Desenvolvedor Full Stack</h2>
-        <p>Python • PHP • MySQL • Git</p>
+    <header class="hero" id="topo">
+        <div class="hero-conteudo">
+            <p class="hero-etiqueta">Desenvolvedor Full Stack</p>
 
-        <a href="#projetos" 
-           class="btn-primary" 
-           style="background-color: #7E57C2; color: white; text-decoration: none; padding: 10px 18px; border-radius: 5px; display: inline-block; margin-top: 10px;">
-           Ver Projetos
-        </a>
-    </div>
-</header>
+            <h1>Jussielson G. Silva</h1>
 
+            <p class="hero-cargo">
+                Analista e desenvolvedor de sistemas para pequenas e grandes empresas.
+            </p>
+
+            <ul class="hero-stack">
+                <li>Python</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Git</li>
+                <li>Linux</li>
+            </ul>
+
+            <div class="hero-acoes">
+                <a href="#projetos" class="botao botao-principal">Ver projetos</a>
+                <a href="https://github.com/JussielsonGsilva" target="_blank" rel="noopener"
+                   class="botao botao-contorno">GitHub</a>
+            </div>
+        </div>
+    </header>
 
     <!-- SOBRE -->
-    <section id="sobre" class="section">
-        <h2>Sobre Mim</h2>
-        <p>Sou Jussielson G. Silva, Graduado em Análise e Desenvolvimento de Sistemas e apaixonado por tecnologia.</p>
-        <p>Atuo como Desenvolvedor Full Stack e Analista de Dados, criando soluções modernas e funcionais, sempre com foco em eficiência e organização.</p>
-        <p>Minha trajetória profissional, marcada por liderança, disciplina e responsabilidade, fortalece minha atuação na área de TI e me motiva a buscar constante evolução.</p>
-        <p>Tenho experiência com Python, PHP, MySQL, HTML, CSS, JavaScript, Linux e Git.</p>
+    <section id="sobre" class="secao">
+        <h2 class="secao-titulo">Sobre mim</h2>
+
+        <div class="texto-corrido">
+            <p>
+                Sou Jussielson G. Silva, graduado em Análise e Desenvolvimento de Sistemas
+                e apaixonado por tecnologia.
+            </p>
+            <p>
+                Atuo como desenvolvedor full stack e analista de dados, criando soluções
+                modernas e funcionais, sempre com foco em eficiência e organização.
+            </p>
+            <p>
+                Minha trajetória profissional, marcada por liderança, disciplina e
+                responsabilidade, fortalece minha atuação na área de TI e me motiva a
+                buscar constante evolução.
+            </p>
+            <p>
+                Tenho experiência com Python, PHP, MySQL, HTML, CSS, JavaScript, Linux e Git.
+            </p>
+        </div>
     </section>
 
-    <!-- EXPERIÊNCIA PROFISSIONAL -->
-    <section id="experiencia" class="section section-light">
-        <h2>Experiência Profissional</h2>
+    <!-- EXPERIÊNCIA -->
+    <section id="experiencia" class="secao secao-alt">
+        <h2 class="secao-titulo">Experiência profissional</h2>
 
-        <div class="card">
-            <h3>Chefe da Seção de Recursos Humanos</h3>
-            <p><strong>2ª Companhia de Ação de Comandos – BTL-Tonelero/RJ</strong></p>
-            <p>
-                Responsável pela gestão administrativa e de pessoal em uma das unidades mais especializadas
-                do Batalhão de Operações Especiais do Brasil. Atuação com liderança, organização de
-                processos, análise de dados administrativos e coordenação de equipes.
-            </p>
-        </div>
+        <ol class="linha-tempo">
+            <li class="linha-tempo-item">
+                <h3>Chefe da Seção de Recursos Humanos</h3>
+                <p class="linha-tempo-local">
+                    2ª Companhia de Ação de Comandos — BTL&nbsp;Tonelero/RJ
+                </p>
+                <p>
+                    Responsável pela gestão administrativa e de pessoal em uma das unidades
+                    mais especializadas do Batalhão de Operações Especiais do Brasil. Atuação
+                    com liderança, organização de processos, análise de dados administrativos
+                    e coordenação de equipes.
+                </p>
+            </li>
 
-        <div class="card">
-            <h3>Missões de Paz – Organização das Nações Unidas (ONU)</h3>
-            <p><strong>Angola e Haiti</strong></p>
-            <p>
-                Participação em operações internacionais de manutenção da paz, atuando em ambientes
-                multiculturais, de alta complexidade e sob pressão. Experiência que ampliou minha capacidade
-                de adaptação, comunicação e resolução de problemas.
-            </p>
-        </div>
+            <li class="linha-tempo-item">
+                <h3>Missões de paz — Organização das Nações Unidas</h3>
+                <p class="linha-tempo-local">Angola e Haiti</p>
+                <p>
+                    Participação em operações internacionais de manutenção da paz, atuando em
+                    ambientes multiculturais, de alta complexidade e sob pressão. Experiência
+                    que ampliou minha capacidade de adaptação, comunicação e resolução de
+                    problemas.
+                </p>
+            </li>
+        </ol>
     </section>
 
     <!-- PROJETOS -->
-    <section id="projetos" class="section">
-        <h2>Projetos</h2>
+    <section id="projetos" class="secao">
+        <h2 class="secao-titulo">Projetos</h2>
+        <p class="secao-apoio">
+            Oito sistemas em produção ou prontos para rodar. Cada card leva ao código no GitHub.
+        </p>
 
-        <div class="card">
-            <h3>Sistema de Gestão e Autenticação</h3>
-            <p>Sistema completo com login, controle de usuários e painel administrativo.</p>
-            <a href="https://github.com/JussielsonGsilva/sistema_gestao_autenticacao" target="_blank" class="btn-dark">
-                Ver no GitHub
-            </a>
-        </div>
-      
-      	<div class="card">
-            <h3>Sistema de RH completo</h3>
-            <p>Sistema com gerenciamento de colaboradores, cargos e departamentos.</p>
-            <a href="https://github.com/JussielsonGsilva/sistema_gestao_rh" target="_blank" class="btn-dark">
-                Ver no GitHub
-            </a>
-        </div>
-      
-      	<div class="card">
-            <h3>Dashboard com python</h3>
-            <p>Dashboard interativo de análise de vendas desenvolvido com Python, Pandas, Plotly e Streamlit.</p>
-            <a href="https://github.com/JussielsonGsilva/dashboard_dados_python" target="_blank" class="btn-dark">
-                Ver no GitHub
-            </a>
-        </div>
-      
-      	<div class="card">
-            <h3>Análise de Bigdata com python</h3>
-            <p>Este projeto implementa um pipeline robusto para processamento de dados em larga escala utilizando Python e Pandas. A solução emprega leitura em chunks, otimização de memória, tratamento eficiente de datasets volumosos e organização modular do código, seguindo boas práticas de engenharia de dados.</p>
-            <a href="https://github.com/JussielsonGsilva/bigdata_com_python" target="_blank" class="btn-dark">
-                Ver no GitHub
-            </a>
-        </div>
-      
-      	<div class="card">
-            <h3>Consulta de CEP com Python</h3>
-            <p>Este projeto é uma aplicação simples e funcional para consulta de CEP, utilizando a API ViaCEP.</p>
-            <a href="https://github.com/JussielsonGsilva/api_cep_com_python_estrutura_mvc" target="_blank" class="btn-dark">
-                Ver no GitHub
-            </a>
-        </div>
-      
-        <div class="card">
-            <h3>Sistema de Reservas</h3>
-            <p>O Sistema de Reservas é uma aplicação web desenvolvida com PHP, MySQL, HTML, CSS e JavaScript, criada para gerenciar reservas de salas, equipamentos e eventos de forma simples e eficiente.</p>
-            <a href="https://github.com/JussielsonGsilva/sistema_reservas" target="_blank" class="btn-dark">
-                Ver no GitHub
-            </a>
-         </div>
-      
-      	<div class="card">
-            <h3>Modelo de Chat</h3>
-            <p>Projeto de chat em tempo real inspirado no WhatsApp, utilizando PHP, MySQL e WebSocket.</p>
-            <a href="https://github.com/JussielsonGsilva/clonesapp_websocker" target="_blank" class="btn-dark">
-                Ver no GitHub
-            </a>
-         </div>
-      
-      	<div class="card">
-            <h3>CRUD com Python</h3>
-            <p>Projeto de um CRUD com linguagem de Programação Python e biblioteca Streamlit</p>
-            <a href="https://github.com/JussielsonGsilva/Crud_com_Python" target="_blank" class="btn-dark">
-                Ver no GitHub
-            </a>
-         </div>
+        <div class="grade-projetos">
 
+            <article class="projeto">
+                <h3>Análise de Bigdata com Python</h3>
+                <p>
+                    Pipeline de quatro etapas que processa 179 milhões de transações
+                    (17&nbsp;GB) em máquina comum, lendo os dados em lotes.
+                </p>
+                <ul class="tags">
+                    <li>Python</li>
+                    <li>Pandas</li>
+                    <li>Parquet</li>
+                </ul>
+                <a href="https://github.com/JussielsonGsilva/bigdata_com_python"
+                   target="_blank" rel="noopener" class="projeto-link">Ver no GitHub</a>
+            </article>
+
+            <article class="projeto">
+                <h3>Sistema de Gestão e Autenticação</h3>
+                <p>
+                    Gestão comercial com clientes, produtos, vendas e usuários. Venda e baixa
+                    de estoque numa só transação, com auditoria de acessos.
+                </p>
+                <ul class="tags">
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>PDO</li>
+                </ul>
+                <a href="https://github.com/JussielsonGsilva/sistema_gestao_autenticacao"
+                   target="_blank" rel="noopener" class="projeto-link">Ver no GitHub</a>
+            </article>
+
+            <article class="projeto">
+                <h3>Modelo de Chat</h3>
+                <p>
+                    Chat individual em tempo real via WebSocket, com confirmação de entrega
+                    e de leitura.
+                </p>
+                <ul class="tags">
+                    <li>PHP</li>
+                    <li>WebSocket</li>
+                    <li>Ratchet</li>
+                </ul>
+                <a href="https://github.com/JussielsonGsilva/clonesapp_websocker"
+                   target="_blank" rel="noopener" class="projeto-link">Ver no GitHub</a>
+            </article>
+
+            <article class="projeto">
+                <h3>Sistema de Reservas</h3>
+                <p>
+                    Reserva de salas com verificação de conflito de horário, dois níveis de
+                    acesso e histórico por usuário.
+                </p>
+                <ul class="tags">
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                </ul>
+                <a href="https://github.com/JussielsonGsilva/sistema_reservas"
+                   target="_blank" rel="noopener" class="projeto-link">Ver no GitHub</a>
+            </article>
+
+            <article class="projeto">
+                <h3>Sistema de RH completo</h3>
+                <p>
+                    Colaboradores, cargos e departamentos, com vínculos protegidos contra
+                    exclusão e painel de indicadores.
+                </p>
+                <ul class="tags">
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                </ul>
+                <a href="https://github.com/JussielsonGsilva/sistema_gestao_rh"
+                   target="_blank" rel="noopener" class="projeto-link">Ver no GitHub</a>
+            </article>
+
+            <article class="projeto">
+                <h3>Dashboard com Python</h3>
+                <p>
+                    Painel interativo de vendas com filtro por categoria, indicadores
+                    financeiros e quatro gráficos.
+                </p>
+                <ul class="tags">
+                    <li>Python</li>
+                    <li>Pandas</li>
+                    <li>Plotly</li>
+                    <li>Streamlit</li>
+                </ul>
+                <a href="https://github.com/JussielsonGsilva/dashboard_dados_python"
+                   target="_blank" rel="noopener" class="projeto-link">Ver no GitHub</a>
+            </article>
+
+            <article class="projeto">
+                <h3>Consulta de CEP com Python</h3>
+                <p>
+                    Consulta à API ViaCEP em arquitetura MVC, com máscara automática no campo
+                    e tema claro/escuro.
+                </p>
+                <ul class="tags">
+                    <li>Python</li>
+                    <li>Flask</li>
+                    <li>MVC</li>
+                </ul>
+                <a href="https://github.com/JussielsonGsilva/api_cep_com_python_estrutura_mvc"
+                   target="_blank" rel="noopener" class="projeto-link">Ver no GitHub</a>
+            </article>
+
+            <article class="projeto">
+                <h3>CRUD com Python</h3>
+                <p>
+                    CRUD de clientes com as quatro operações, validação de campos e bloqueio
+                    de nome duplicado.
+                </p>
+                <ul class="tags">
+                    <li>Python</li>
+                    <li>Streamlit</li>
+                    <li>MySQL</li>
+                </ul>
+                <a href="https://github.com/JussielsonGsilva/Crud_com_Python"
+                   target="_blank" rel="noopener" class="projeto-link">Ver no GitHub</a>
+            </article>
+
+        </div>
     </section>
 
     <!-- CONTATO -->
-    <section id="contato" class="section section-light">
-        <h2>Contato</h2>
-        <p>Entre em contato:</p>
-
-        <p>Email: <strong>jussielson2001@gmail.com</strong></p>
-
-        <p>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/jussielson22/" target="_blank">
-                linkedin.com/in/jussielson22
-            </a>
+    <section id="contato" class="secao secao-alt">
+        <h2 class="secao-titulo">Contato</h2>
+        <p class="secao-apoio">
+            Disponível para projetos e oportunidades. Escolha o canal que preferir.
         </p>
 
-        <p>
-            GitHub:
-            <a href="https://github.com/JussielsonGsilva" target="_blank">
-                github.com/JussielsonGsilva
+        <div class="contatos">
+            <a class="contato-item contato-whatsapp"
+               href="https://wa.me/5586995845986?text=Ol%C3%A1%20Jussielson%2C%20vi%20seu%20portf%C3%B3lio."
+               target="_blank" rel="noopener">
+                <span class="contato-rotulo">WhatsApp</span>
+                <span class="contato-valor">(86) 99584-5986</span>
             </a>
-        </p>
+
+            <a class="contato-item" href="mailto:jussielson2001@gmail.com">
+                <span class="contato-rotulo">E-mail</span>
+                <span class="contato-valor">jussielson2001@gmail.com</span>
+            </a>
+
+            <a class="contato-item" href="https://www.linkedin.com/in/jussielson22/"
+               target="_blank" rel="noopener">
+                <span class="contato-rotulo">LinkedIn</span>
+                <span class="contato-valor">linkedin.com/in/jussielson22</span>
+            </a>
+
+            <a class="contato-item" href="https://github.com/JussielsonGsilva"
+               target="_blank" rel="noopener">
+                <span class="contato-rotulo">GitHub</span>
+                <span class="contato-valor">github.com/JussielsonGsilva</span>
+            </a>
+        </div>
     </section>
 
-    <footer class="footer">
-        © 2026 - Desenvolvido por Jussielson G. Silva
+    <footer class="rodape">
+        <p>© 2026 — Jussielson G. Silva</p>
     </footer>
 
 </body>
