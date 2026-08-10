@@ -192,34 +192,20 @@ button:focus-visible {
     min-height: 100svh;
     display: flex;
     align-items: center;
-    background: url('img.png') center/cover no-repeat;
+    /* Fundo desenhado em SVG embutido, no lugar de um PNG de 1 MB:
+       são 2 KB, ficam nítidos em qualquer resolução e não custam uma
+       requisição. O desenho é o mesmo motivo da imagem original —
+       trilhas que quebram em 45 graus e terminam num ponto aceso. */
+    background-color: var(--fundo);
+    background-image:
+        radial-gradient(ellipse 90% 70% at 15% 35%,
+            rgba(34, 211, 238, 0.10) 0%, transparent 65%),
+        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 900' preserveAspectRatio='xMidYMid slice'><g fill='none' stroke='%2322D3EE' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' opacity='0.16'><path d='M-40 80 H240 L320 160 H700 L780 240 H1480'/><path d='M-40 190 H150 L230 270 H520 L600 350 H1480'/><path d='M-40 300 H380 L460 380 H880'/><path d='M-40 420 H110 L190 500 H640 L720 580 H1480'/><path d='M-40 530 H300 L380 610 H1010'/><path d='M-40 650 H200 L280 730 H1480'/><path d='M-40 770 H460 L540 850 H1480'/><path d='M330 -40 V50 L410 130 H1480'/><path d='M900 -40 V120 L980 200 H1480'/><path d='M620 940 V820 L700 740 H1480'/></g><circle cx='700' cy='160' r='14' fill='%2322D3EE' opacity='0.10'/><circle cx='700' cy='160' r='4.5' fill='%2322D3EE' opacity='0.75'/><circle cx='880' cy='380' r='14' fill='%2322D3EE' opacity='0.10'/><circle cx='880' cy='380' r='4.5' fill='%2322D3EE' opacity='0.75'/><circle cx='1010' cy='610' r='14' fill='%2322D3EE' opacity='0.10'/><circle cx='1010' cy='610' r='4.5' fill='%2322D3EE' opacity='0.75'/><circle cx='520' cy='270' r='14' fill='%2322D3EE' opacity='0.10'/><circle cx='520' cy='270' r='4.5' fill='%2322D3EE' opacity='0.75'/><circle cx='240' cy='80' r='14' fill='%2322D3EE' opacity='0.10'/><circle cx='240' cy='80' r='4.5' fill='%2322D3EE' opacity='0.75'/><circle cx='190' cy='500' r='14' fill='%2322D3EE' opacity='0.10'/><circle cx='190' cy='500' r='4.5' fill='%2322D3EE' opacity='0.75'/><circle cx='410' cy='130' r='14' fill='%2322D3EE' opacity='0.10'/><circle cx='410' cy='130' r='4.5' fill='%2322D3EE' opacity='0.75'/><circle cx='980' cy='200' r='14' fill='%2322D3EE' opacity='0.10'/><circle cx='980' cy='200' r='4.5' fill='%2322D3EE' opacity='0.75'/><circle cx='280' cy='730' r='14' fill='%2322D3EE' opacity='0.10'/><circle cx='280' cy='730' r='4.5' fill='%2322D3EE' opacity='0.75'/><circle cx='700' cy='740' r='14' fill='%2322D3EE' opacity='0.10'/><circle cx='700' cy='740' r='4.5' fill='%2322D3EE' opacity='0.75'/></svg>");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding: 7rem 1.5rem 4rem;
     overflow: hidden;
-}
-
-/* Camada escura sobre a imagem: garante contraste do texto sem
-   depender de qual trecho da foto ficou visível no recorte */
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        105deg,
-        rgba(10, 22, 40, 0.94) 0%,
-        rgba(10, 22, 40, 0.80) 45%,
-        rgba(10, 22, 40, 0.55) 100%
-    );
-}
-
-/* Emenda com a seção seguinte, para a imagem não terminar em corte seco */
-.hero::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 120px;
-    background: linear-gradient(to bottom, transparent, var(--fundo));
 }
 
 .hero-conteudo {
