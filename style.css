@@ -567,6 +567,37 @@ button:focus-visible {
     margin: 0;
 }
 
+/* Linha de redes sociais acima do copyright */
+.rodape-redes {
+    list-style: none;
+    margin: 0 0 1rem;
+    padding: 0;
+
+    /* Centraliza e permite quebrar em telas estreitas */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+/* Ponto separador entre os itens — some no último para não sobrar solto */
+.rodape-redes li + li::before {
+    content: "·";
+    margin-right: 0.9rem;
+    color: var(--borda);
+}
+
+.rodape-redes a {
+    color: var(--texto-suave);
+    transition: color var(--transicao);
+}
+
+.rodape-redes a:hover,
+.rodape-redes a:focus-visible {
+    color: var(--destaque);
+}
+
 /* ------------------------------------------------------------
    TELAS ESTREITAS
    ------------------------------------------------------------ */
