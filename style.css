@@ -252,6 +252,14 @@ button:focus-visible {
     max-width: 34ch;
 }
 
+/* Título "Conhecimento em:" logo acima das tecnologias */
+.hero-stack-titulo {
+    font-family: var(--fonte-mono);
+    font-size: 0.85rem;
+    color: var(--texto-suave);
+    margin: 0 0 0.75rem;
+}
+
 .hero-stack {
     display: flex;
     flex-wrap: wrap;
