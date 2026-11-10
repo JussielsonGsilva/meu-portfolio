@@ -506,6 +506,38 @@ button:focus-visible {
     transition: opacity var(--transicao);
 }
 
+/* Linha com mais de um link no card (ex: "Testar online" + "Ver no GitHub") */
+.projeto-links {
+    display: flex;              /* links lado a lado */
+    flex-wrap: wrap;            /* em tela estreita, o segundo desce para a linha de baixo */
+    align-items: center;        /* centraliza verticalmente o botão e o link */
+    gap: 0.6rem 1.2rem;         /* espaço entre linhas / entre os links */
+}
+
+/* Dentro da linha de links, o "Ver no GitHub" fica centralizado com o botão
+   (sobrepõe o align-self: flex-start do .projeto-link, que o deixava mais alto) */
+.projeto-links .projeto-link {
+    align-self: center;
+}
+
+/* Botão pequeno em destaque para abrir o sistema publicado */
+.projeto-botao-online {
+    font-size: 0.88rem;                 /* um pouco menor que o texto do card */
+    font-weight: 600;                   /* seminegrito, igual ao link do GitHub */
+    padding: 0.45rem 1rem;              /* altura e largura confortáveis para tocar no celular */
+    border-radius: var(--raio);         /* mesmos cantos dos botões do site */
+    background: var(--destaque);        /* ciano do tema */
+    color: #06121F;                     /* texto escuro sobre o ciano (mesmo do botão principal) */
+    transition: background var(--transicao), transform var(--transicao);
+}
+
+/* Mouse em cima: clareia e sobe levemente, como os outros botões */
+.projeto-botao-online:hover {
+    background: var(--destaque-forte);  /* ciano mais claro */
+    color: #06121F;                     /* mantém o texto escuro (sobrepõe a cor de link do hover) */
+    transform: translateY(-2px);        /* pequeno "salto" para cima */
+}
+
 /* ------------------------------------------------------------
    CONTATO
    ------------------------------------------------------------ */
